@@ -14,9 +14,13 @@ function start() {
         <span id='introducename' className=" text-[10vw] font-extrabold font-pretendard">밋업</span>
       </div>
 
-      <div id='characterDiv' className=' bg-graygray w-[50vw] h-[30vh] z-10 overflow-visible mt-[8vw]'></div>
-      <div id='SignInDiv' className='bg-blueblue flex justif  y-center items-center w-[30vw] h-[5vh] rounded-[15px]'></div>
-      <div id='SignUpDiv' className=''></div>
+      <div id='characterDiv' className=' bg-graygray w-[70vw] h-[40vh] z-10 overflow-visible mt-[8vw]'></div>
+      <div id='SignInDiv' className='bg-blueblue flex justify-center items-center w-[50vw] h-[6vh] rounded-[15px] mt-[5vh]'>
+        <span id='signinText' className=' font-pretendard text-white text-[5vw] font-bold'>로그인</span>
+      </div>
+      <div id='SignUpDiv' className=' border-2 border-blueblue flex justify-center items-center w-[50vw] h-[6vh] rounded-[15px] mt-[5vh]'>
+        <span id='signupText' className=' font-pretendard text-blueblue text-[5vw] font-bold'>회원가입</span>
+      </div>
     </div>
     </>
   )
