@@ -14,6 +14,9 @@ export default {
         blueblue: "#1570EF",
         graygray: "#D9D9D9"
       },
+      fontFamily: {
+        pretendard: ["Pretendard", "sans-serif"],
+      },
     },
   },
   plugins: [],
