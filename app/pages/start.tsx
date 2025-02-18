@@ -1,7 +1,18 @@
+'use client'
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 
 function start() {
+  const router = useRouter();
+
+  function goToSignIn(){
+    router.push('../pages/signin');
+  }
+
+  function goToSignUP() {
+    router.push('../pages/signup');
+  }
   return (
     <>
     <div id="background" className=" w-full flex flex-col items-center bg-white">
@@ -15,10 +26,10 @@ function start() {
       </div>
 
       <div id='characterDiv' className=' bg-graygray w-[70vw] h-[40vh] z-10 overflow-visible mt-[8vw]'></div>
-      <div id='SignInDiv' className='bg-blueblue flex justify-center items-center w-[50vw] h-[6vh] rounded-[15px] mt-[5vh]'>
+      <div id='SignInDiv' className='bg-blueblue flex justify-center items-center w-[50vw] h-[6vh] rounded-[15px] mt-[5vh]' onClick={goToSignIn}>
         <span id='signinText' className=' font-pretendard text-white text-[5vw] font-bold'>로그인</span>
       </div>
-      <div id='SignUpDiv' className=' border-2 border-blueblue flex justify-center items-center w-[50vw] h-[6vh] rounded-[15px] mt-[5vh]'>
+      <div id='SignUpDiv' className=' border-2 border-blueblue flex justify-center items-center w-[50vw] h-[6vh] rounded-[15px] mt-[5vh]' onClick={goToSignUP}>
         <span id='signupText' className=' font-pretendard text-blueblue text-[5vw] font-bold'>회원가입</span>
       </div>
     </div>
