@@ -22,8 +22,10 @@ function signup() {
           <input id='passwordcheck' placeholder="비밀번호 확인" type='password' className=' bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder: font-bold font-pretendard'></input>
           <input id='email' placeholder='이메일' type='email' className=' bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder: font-bold font-pretendard'></input>
         </div>
-        <div id='bottomDiv' className="">
-          <div id='subbmit button'></div>
+        <div id='bottomDiv' className="flex flex-row-reverse w-full mt-[20vh]">
+          <div id='subbmit button' className=' rounded-[8px] bg-blueblue w-[12vw] h-[6vh] flex justify-center items-center'>
+            <img id='submit arrow' src="/arrow-left-sm.svg" alt='tlqkf'></img>
+          </div>
         </div>
     </div>
   )
