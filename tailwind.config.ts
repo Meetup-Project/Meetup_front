@@ -12,7 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         blueblue: "#1570EF",
-        graygray: "#D9D9D9"
+        graygray: "#D9D9D9",
+        bluegray: "#9296AB",
       },
       fontFamily: {
         pretendard: ["Pretendard", "sans-serif"],
