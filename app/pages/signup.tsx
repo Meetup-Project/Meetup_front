@@ -7,10 +7,12 @@ function signup() {
             <span id='signupText'>회원가입</span>
             <div id='backbutton'></div>
         </div>
-        <input id='name'></input>
-        <input id='password'></input>
-        <input id='passwordcheck'></input>
-        <input id='email'></input>
+        <div id='contentDiv'>
+          <input id='name'></input>
+          <input id='password'></input>
+          <input id='passwordcheck'></input>
+          <input id='email'></input>
+        </div>
     </div>
   )
 }

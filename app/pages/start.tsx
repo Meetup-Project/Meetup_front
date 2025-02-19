@@ -7,11 +7,11 @@ function start() {
   const router = useRouter();
 
   function goToSignIn(){
-    router.push('../pages/signin');
+    router.push('./SignIn');
   }
 
   function goToSignUP() {
-    router.push('../pages/signup');
+    router.push('./SignUp');
   }
   return (
     <>
