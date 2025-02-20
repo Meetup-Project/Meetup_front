@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import axios from 'axios';
 
 
 function signup() {
   const router = useRouter()
-
-  function goBack() {
+  const  [ userData, setUserData ] = useState("");
+  const goBack = async() => {
     router.back();
   }
+  const handleSubmit = async () => {
+
+  }
+
   return (
     <div id='background' className=' bg-white flex flex-col items-center p-[10vw]'>
         <div id='topDiv' className=' flex items-center justify-between w-full'>
