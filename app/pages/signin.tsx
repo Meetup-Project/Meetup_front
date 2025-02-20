@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import axios from 'axios';
 
 function signin() {
   const router = useRouter();
@@ -27,10 +28,12 @@ function signin() {
         <span className="text-gray-400 font-semibold text-sm">or</span>
         <div className="flex-1 border-t border-gray-300"></div>
       </div>
-      <div id='OauthDiv'>
-        
+      <div id='OauthDiv' className='w-[60vw] flex flex-col gap-[4vh] mt-[8vh]'>
+        <div id='google' className=' border-2 border-googlebord rounded-[9999px] w-full h-[6vh]'></div>
+        <div id='kakao' className=' w-full h-[6vh] rounded-[12px] bg-kakaobg'></div>
+        <div id='naver' className=' w-full h-[6vh] rounded-[4px] bg-naverbg'></div>
       </div>
-      <div id='bottomDiv' className="flex flex-row-reverse w-full mt-[20vh]">
+      <div id='bottomDiv' className="flex flex-row-reverse w-full mt-[10vh]">
           <div id='subbmit button' className=' rounded-[8px] bg-blueblue w-[12vw] h-[6vh] flex justify-center items-center'>
             <img id='submit arrow' src="/arrow-left-sm.svg" alt='tlqkf'></img>
           </div>
