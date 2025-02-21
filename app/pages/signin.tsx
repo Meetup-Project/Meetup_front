@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import axios from 'axios';
 
 function signin() {
   const router = useRouter();
@@ -28,7 +27,7 @@ function signin() {
         <span className="text-gray-400 font-semibold text-sm">or</span>
         <div className="flex-1 border-t border-gray-300"></div>
       </div>
-      <div id='OauthDiv' className='w-[60vw] flex flex-col gap-[4vh] mt-[8vh]'>
+      <div id='OauthDiv' className='w-[60vw] flex flex-col gap-[4vh] mt-[5vh]'>
         <div id='google' className=' border-2 border-googlebord rounded-[9999px] w-full h-[6vh]'></div>
         <div id='kakao' className=' w-full h-[6vh] rounded-[12px] bg-kakaobg'></div>
         <div id='naver' className=' w-full h-[6vh] rounded-[4px] bg-naverbg'></div>
