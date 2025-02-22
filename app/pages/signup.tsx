@@ -23,26 +23,24 @@ function Signup() {
       return;
     }
 
-    // DTO 객체 생성 (백엔드 변수명과 일치)
     const dto = {
-      email,
-      password,
-      username, // ✅ 백엔드에서 username 사용
+      email, 
+      password, 
+      username,
     };
 
     try {
       const response = await axios.post(
         `${process.env.NEXT_PUBLIC_API_URL}/auth/signup`,
         dto,
-        { withCredentials: true } // ✅ 인증 관련 쿠키 전달 가능
+        { withCredentials: true } 
       );
 
       console.log('회원가입 성공:', response.data);
-      router.push('/SignIn'); // 회원가입 후 로그인 페이지로 이동
+      router.push('/SignIn');
     } catch (error: any) {
       console.error('회원가입 실패:', error);
 
-      // 서버 응답이 있는 경우 에러 메시지 처리
       if (error.response) {
         setErrorMessage(error.response.data.message || '회원가입에 실패했습니다.');
       } else {
@@ -67,46 +65,20 @@ function Signup() {
       </div>
 
       <div id="contentDiv" className="flex flex-col gap-[5vh] mt-[10vh] w-full items-center">
-        <input
-          id="name"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          placeholder="이름"
-          type="text"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard"
-        />
-        <input
-          id="password1"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="비밀번호"
-          type="password"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard"
-        />
-        <input
-          id="password2"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          placeholder="비밀번호 확인"
-          type="password"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard"
-        />
+        <input id="name" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="이름" type="text"
+          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
+        <input id="password1" value={password}
+          onChange={(e) => setPassword(e.target.value)} placeholder="비밀번호" type="password"
+          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
+        <input id="password2" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="비밀번호 확인" type="password"
+          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
         {errorMessage && <p className="text-red-500 font-bold">{errorMessage}</p>}
-        <input
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="이메일"
-          type="email"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard"
-        />
+        <input id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="이메일" type="email"
+          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard"/>
       </div>
 
       <div id="bottomDiv" className="flex flex-row-reverse w-full mt-[20vh]">
-        <button
-          onClick={handleSubmit}
-          className="rounded-[8px] bg-blueblue w-[12vw] h-[6vh] flex justify-center items-center"
-        >
+        <button onClick={handleSubmit} className="rounded-[8px] bg-blueblue w-[12vw] h-[6vh] flex justify-center items-center">
           <img id="submit-arrow" src="/arrow-left-sm.svg" alt="회원가입" />
         </button>
       </div>
