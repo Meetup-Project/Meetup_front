@@ -52,14 +52,8 @@ function Signup() {
   return (
     <div id="background" className="bg-white flex flex-col items-center p-[10vw]">
       <div id="topDiv" className="flex items-center justify-between w-full">
-        <span id="signupText" className="font-pretendard font-extrabold text-[6vw]">
-          회원가입
-        </span>
-        <div
-          id="backbutton"
-          onClick={goBack}
-          className="rounded-[8px] bg-bluegray w-[9vw] h-[4.7vh] flex justify-center items-center cursor-pointer"
-        >
+        <span id="signupText" className="font-pretendard font-extrabold text-[6vw]">회원가입</span>
+        <div id="backbutton" onClick={goBack} className="rounded-[8px] bg-bluegray w-[9vw] h-[4.7vh] flex justify-center items-center cursor-pointer">
           <img id="backimg" src="/arrow-right-sm.svg" alt="arrow-right" />
         </div>
       </div>
