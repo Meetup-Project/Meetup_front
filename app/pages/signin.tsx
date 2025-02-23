@@ -16,19 +16,27 @@ function SignIn() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('https://endlessly-cuddly-salmon.ngrok-free.app/auth/login', {
-        email: EmailValue,
-        password: PasswordValue,
-      });
-
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/auth/login`,
+        {
+          email: EmailValue,
+          password: PasswordValue,
+        }
+      );
+  
       console.log('로그인 성공:', response.data);
+      
+      // JWT 토큰을 로컬 스토리지에 저장
+      if (response.data.token) {
+        localStorage.setItem('token', response.data.token);
+      }
+  
       router.push('/SStart'); // 로그인 성공 후 메인 페이지로 이동
     } catch (error) {
       console.error('로그인 실패:', error);
       setErrorMessage('❌ 로그인 정보가 올바르지 않습니다.');
     }
   };
-
   return (
     <div id='background' className='bg-white flex flex-col items-center p-[10vw]'>
       <div id='topDiv' className='flex items-center justify-between w-full'>
@@ -61,7 +69,7 @@ function SignIn() {
         </button>
         <button id='naver' className='w-full h-[6vh] rounded-[4px] bg-naverbg'>
           네이버 로그인
-        </button>
+        </button>W
       </div>
 
       <div id='bottomDiv' className='flex flex-row-reverse w-full mt-[10vh]'>
