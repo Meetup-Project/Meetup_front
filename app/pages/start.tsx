@@ -21,7 +21,7 @@ function Start() {
       </div>
 
       {/* 소개 문구 */}
-      <div className='flex flex-col items-center text-blueblue mt-[8vw] gap-[7vw] sm:gap-[8vw] md:gap-[6vw]'>
+      <div className='flex flex-col items-center text-blueblue mt-[8vw] gap-[7  vw] sm:gap-[8vw] md:gap-[6vw]'>
         <span className='text-[6vw] sm:text-[5vw] md:text-[4vw] font-extrabold font-pretendard'>당신의 일정을 만들어보세요</span>
         <span className="text-[10vw] sm:text-[8vw] md:text-[6vw] font-extrabold font-pretendard">밋업</span>
       </div>
