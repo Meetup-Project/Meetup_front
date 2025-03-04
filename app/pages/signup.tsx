@@ -51,6 +51,7 @@ function Signup() {
 
   return (
     <div id="background" className="bg-white flex flex-col items-center p-[10vw]">
+      {/*맨위 탑바 */}
       <div id="topDiv" className="flex items-center justify-between w-full">
         <span id="signupText" className="font-pretendard font-extrabold text-[6vw]">회원가입</span>
         <div id="backbutton" onClick={goBack} className="rounded-[8px] bg-bluegray w-[9vw] h-[4.7vh] flex justify-center items-center cursor-pointer">
@@ -58,7 +59,8 @@ function Signup() {
         </div>
       </div>
 
-      <div id="contentDiv" className="flex flex-col gap-[5vh] mt-[10vh] w-full items-center">
+      {/* 인적사항 입력 */}
+      <div className="flex flex-col gap-[5vh] mt-[10vh] w-full items-center">
         <input id="name" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="이름" type="text"
           className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
         <input id="password1" value={password}
@@ -71,7 +73,8 @@ function Signup() {
           className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard"/>
       </div>
 
-      <div id="bottomDiv" className="flex flex-row-reverse w-full mt-[20vh]">
+      {/* 밑에 부분 */}
+      <div className="flex flex-row-reverse w-full mt-[20vh]">
         <button onClick={handleSubmit} className="rounded-[8px] bg-blueblue w-[12vw] h-[6vh] flex justify-center items-center">
           <img id="submit-arrow" src="/arrow-left-sm.svg" alt="회원가입" />
         </button>

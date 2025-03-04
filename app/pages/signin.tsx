@@ -38,7 +38,7 @@ function SignIn() {
   };
   
   return (
-    <div className='w-full max-w-[430px] min-w-[320px] min-h-screen flex flex-col items-center bg-white mx-auto px-4'>
+    <div className='w-full max-w-[430px] min-w-[320px] min-h-screen flex flex-col items-center bg-white mx-auto p-[10vw]'>
       {/* 맨위 탑바 */}
       <div className='flex items-center justify-between w-full py-4'>
         <span className=' text-black font-pretendard font-extrabold text-3xl md:text-2xl'>로그인</span>
