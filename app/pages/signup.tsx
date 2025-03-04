@@ -60,19 +60,19 @@ function Signup() {
       </div>
 
       {/* 인적사항 입력 */}
-      <div className="flex flex-col gap-[5vh] mt-[10vh] w-full items-center">
+      <div className="flex flex-col gap-[5vh] mt-[5vh] w-full items-center">
         <input value={username} onChange={(e) => setUsername(e.target.value)} placeholder="이름" type="text"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
+          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl" />
         <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="비밀번호" type="password"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
+          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl" />
         <input value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="비밀번호 확인" type="password"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
+          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl" />
         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="이메일" type="email"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard"/>
+          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl"/>
       </div>
 
       {/* 밑에 부분 */}
-      <div className='flex justify-end w-full max-w-md'>
+      <div className='flex justify-end w-full max-w-md mt-[10vh]'>
         <button onClick={handleSubmit } className='rounded-lg bg-blue-500 w-12 h-12 flex justify-center items-center'>
           <img src='/arrow-left-sm.svg' alt='로그인' />
         </button>

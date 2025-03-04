@@ -49,11 +49,11 @@ function SignIn() {
       </div>
 
       {/*메인 입력칸  */}
-      <div className='flex flex-col gap-6 mt-16 w-full items-center'>
+      <div className='flex flex-col gap-6 mt-8 w-full items-center'>
         <input value={EmailValue} onChange={(e) => SetEmailValue(e.target.value)} placeholder='이메일' type='text'
-          className='bg-gray-200 w-full max-w-md h-12 rounded-lg px-4 placeholder:font-bold' />
+          className="bg-graygray w-[80vw] h-[7vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl text-black" />
         <input value={PasswordValue} onChange={(e) => SetPasswordValue(e.target.value)} placeholder='비밀번호' type='password'
-          className='bg-gray-200 w-full max-w-md h-12 rounded-lg px-4 placeholder:font-bold' />
+          className="bg-graygray w-[80vw] h-[7vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl text-black" />
         {ErrorMessage && <p className='text-red-500 font-bold'>{ErrorMessage}</p>}
       </div>
 
@@ -62,11 +62,12 @@ function SignIn() {
         <span className='text-gray-400 font-semibold text-sm'>or</span>
         <div className='flex-1 border-t border-gray-300'></div>
       </div>
-
-      <div className='w-full max-w-md flex flex-col gap-4 mt-8'>
-        <button className='border-2 border-gray-400 rounded-full w-full h-12 text-gray-700 font-semibold'>Google 로그인</button>
-        <button className='w-full h-12 rounded-lg bg-yellow-400 text-black font-semibold'>카카오 로그인</button>
-        <button className='w-full h-12 rounded-md bg-green-500 text-white font-semibold'>네이버 로그인</button>
+      
+      {/*Oauth 부분*/}
+      <div className='w-full max-w-md flex flex-col gap-10 mt-8'>
+        <button className='border-2 border-gray-400 rounded-full w-full h-16 text-gray-700 font-semibold'>Google 로그인</button>
+        <button className='w-full h-16 rounded-lg bg-yellow-400 text-black font-semibold'>카카오 로그인</button>
+        <button className='w-full h-16 rounded-md bg-green-500 text-white font-semibold'>네이버 로그인</button>
       </div>
       
       {/*넘어가는 버튼*/}
