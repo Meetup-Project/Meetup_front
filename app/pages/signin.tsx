@@ -49,7 +49,7 @@ function SignIn() {
       </div>
 
       {/*메인 입력칸  */}
-      <div className='flex flex-col gap-6 mt-4 w-full items-center'>
+      <div className='flex flex-col gap-6 mt-16 w-full items-center'>
         <input value={EmailValue} onChange={(e) => SetEmailValue(e.target.value)} placeholder='이메일' type='text'
           className='bg-gray-200 w-full max-w-md h-12 rounded-lg px-4 placeholder:font-bold' />
         <input value={PasswordValue} onChange={(e) => SetPasswordValue(e.target.value)} placeholder='비밀번호' type='password'

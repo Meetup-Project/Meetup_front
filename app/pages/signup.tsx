@@ -61,14 +61,13 @@ function Signup() {
 
       {/* 인적사항 입력 */}
       <div className="flex flex-col gap-[5vh] mt-[10vh] w-full items-center">
-        <input id="name" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="이름" type="text"
+        <input value={username} onChange={(e) => setUsername(e.target.value)} placeholder="이름" type="text"
           className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
-        <input id="password1" value={password}
-          onChange={(e) => setPassword(e.target.value)} placeholder="비밀번호" type="password"
+        <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="비밀번호" type="password"
           className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
-        <input id="password2" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="비밀번호 확인" type="password"
+        <input value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="비밀번호 확인" type="password"
           className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard" />
-        <input id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="이메일" type="email"
+        <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="이메일" type="email"
           className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard"/>
       </div>
 
