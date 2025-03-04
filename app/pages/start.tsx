@@ -21,13 +21,13 @@ function Start() {
       </div>
 
       {/* 소개 문구 */}
-      <div className='flex flex-col items-center text-blueblue mt-[8vw] gap-[10vw] sm:gap-[8vw] md:gap-[6vw]'>
+      <div className='flex flex-col items-center text-blueblue mt-[8vw] gap-[7vw] sm:gap-[8vw] md:gap-[6vw]'>
         <span className='text-[6vw] sm:text-[5vw] md:text-[4vw] font-extrabold font-pretendard'>당신의 일정을 만들어보세요</span>
         <span className="text-[10vw] sm:text-[8vw] md:text-[6vw] font-extrabold font-pretendard">밋업</span>
       </div>
 
       {/* 캐릭터 이미지 영역 */}
-      <div className='bg-graygray w-[70vw] h-[40vh] sm:w-[60vw] sm:h-[35vh] md:w-[50vw] md:h-[30vh] z-10 overflow-visible mt-[8vw]'></div>
+      <div className='bg-graygray w-[50vw] h-[30vh] sm:w-[45vw] sm:h-[25vh] md:w-[40vw] md:h-[20vh] max-w-[600px] max-h-[300px] z-10 overflow-visible mt-[5vw]'></div>
       
       {/* 로그인 버튼 */}
       <div className='bg-blueblue flex justify-center items-center w-[50vw] h-[6vh] sm:w-[45vw] sm:h-[5.5vh] md:w-[40vw] md:h-[5vh] rounded-[15px] mt-[5vh] cursor-pointer' onClick={goToSignIn}>
