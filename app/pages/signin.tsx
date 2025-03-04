@@ -39,8 +39,9 @@ function SignIn() {
   
   return (
     <div className='w-full max-w-[430px] min-w-[320px] min-h-screen flex flex-col items-center bg-white mx-auto p-[10vw]'>
+
       {/* 맨위 탑바 */}
-      <div className='flex items-center justify-between w-full py-4'>
+      <div className='flex items-center justify-between w-full'>
         <span className=' text-black font-pretendard font-extrabold text-3xl md:text-2xl'>로그인</span>
         <button onClick={goBack} className='rounded-lg bg-bluegray w-10 h-10 flex justify-center items-center'>
           <img src='/arrow-right-sm.svg' alt='뒤로가기' />
@@ -48,7 +49,7 @@ function SignIn() {
       </div>
 
       {/*메인 입력칸  */}
-      <div className='flex flex-col gap-6 mt-8 w-full items-center'>
+      <div className='flex flex-col gap-6 mt-4 w-full items-center'>
         <input value={EmailValue} onChange={(e) => SetEmailValue(e.target.value)} placeholder='이메일' type='text'
           className='bg-gray-200 w-full max-w-md h-12 rounded-lg px-4 placeholder:font-bold' />
         <input value={PasswordValue} onChange={(e) => SetPasswordValue(e.target.value)} placeholder='비밀번호' type='password'
@@ -67,7 +68,8 @@ function SignIn() {
         <button className='w-full h-12 rounded-lg bg-yellow-400 text-black font-semibold'>카카오 로그인</button>
         <button className='w-full h-12 rounded-md bg-green-500 text-white font-semibold'>네이버 로그인</button>
       </div>
-
+      
+      {/*넘어가는 버튼*/}
       <div className='flex justify-end w-full max-w-md'>
         <button onClick={handleLogin} className='rounded-lg bg-blue-500 w-12 h-12 flex justify-center items-center'>
           <img src='/arrow-left-sm.svg' alt='로그인' />
