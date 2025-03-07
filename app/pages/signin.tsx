@@ -64,10 +64,10 @@ function SignIn() {
       </div>
       
       {/*Oauth 부분*/}
-      <div className='w-full max-w-md flex flex-col gap-10 mt-8'>
-        <button className='border-2 border-gray-400 rounded-full w-full h-16 text-gray-700 font-semibold'>Google 로그인</button>
-        <button className='w-full h-16 rounded-lg bg-yellow-400 text-black font-semibold'>카카오 로그인</button>
-        <button className='w-full h-16 rounded-md bg-green-500 text-white font-semibold'>네이버 로그인</button>
+      <div className='w-full max-w-md flex flex-col gap-5 mt-5'>
+        <button className='border-2 border-gray-400 rounded-full w-full h-12 text-gray-700 font-semibold'>Google 로그인</button>
+        <button className='w-full h-12 rounded-lg bg-yellow-400 text-black font-semibold'>카카오 로그인</button>
+        <button className='w-full h-12 rounded-md bg-green-500 text-white font-semibold'>네이버 로그인</button>
       </div>
       
       {/*넘어가는 버튼*/}
