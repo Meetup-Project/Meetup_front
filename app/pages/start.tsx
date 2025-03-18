@@ -35,7 +35,7 @@ function Start() {
       </div>
       
       {/* 회원가입 버튼 */}
-      <div className='border-2 border-blueblue flex justify-center items-center w-[50vw] h-[6vh] sm:w-[45vw] sm:h-[5.5vh] md:w-[40vw] md:h-[5vh] rounded-[15px] mt-[5vh] cursor-pointer' onClick={goToSignUP}>
+      <div className='border-2 border-blueblue flex justify-center items-center w-[50vw] h-[6vh] sm:w-[45vw] sm:h-[5.5vh] md:w-[40vw] md:h-[5vh] rounded-[15px] mt-[3vh] cursor-pointer' onClick={goToSignUP}>
         <span className='font-pretendard text-blueblue text-[5vw] sm:text-[4vw] md:text-[3vw] font-bold'>회원가입</span>
       </div>
     </div>
