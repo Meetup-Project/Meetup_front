@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         'blueblue': '#4B6BF5',
         'graygray': '#EFEFEF',
+        'tgray': '#AFB3C2',
+        'bggray' : 'EFEFEF'
       },
       fontSize: {
         'sm': ['0.875rem', '1.25rem'],

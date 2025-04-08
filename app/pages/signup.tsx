@@ -54,25 +54,26 @@ function Signup() {
       {/*맨위 탑바 */}
       <div className='flex items-center justify-between w-full'>
         <span className=' text-black font-pretendard font-extrabold text-3xl md:text-2xl'>회원가입</span>
-        <button onClick={goBack} className='rounded-lg bg-bluegray w-10 h-10 flex justify-center items-center'>
+        <button onClick={goBack} className='rounded-lg bg-graygray w-10 h-10 flex justify-center items-center'>
           <img src='/arrow-right-sm.svg' alt='뒤로가기' />
         </button>
       </div>
 
       {/* 인적사항 입력 */}
-      <div className="flex flex-col gap-[5vh] mt-[5vh] w-full items-center">
+      <div className="flex flex-col gap-[3vh] mt-[5vh] w-full items-center">
         <input value={username} onChange={(e) => setUsername(e.target.value)} placeholder="이름" type="text"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl" />
+          className="bg-graygray w-full h-12 rounded-[12px] px-4 py-3 placeholder:font-bold font-pretendard text-base sm:text-lg md:text-xl text-black" />
         <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder="비밀번호" type="password"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl" />
+          className="bg-graygray w-full h-12 rounded-[12px] px-4 py-3 placeholder:font-bold font-pretendard text-base sm:text-lg md:text-xl text-black" />
         <input value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="비밀번호 확인" type="password"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl" />
+          className="bg-graygray w-full h-12 rounded-[12px] px-4 py-3 placeholder:font-bold font-pretendard text-base sm:text-lg md:text-xl text-black" />
         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="이메일" type="email"
-          className="bg-graygray w-[80vw] h-[8vh] rounded-[12px] p-[5vw] placeholder:font-bold font-pretendard text-xl"/>
+          className="bg-graygray w-full h-12 rounded-[12px] px-4 py-3 placeholder:font-bold font-pretendard text-base sm:text-lg md:text-xl text-black"/>
+        {errorMessage && <p className='text-red-500 font-bold'>{errorMessage}</p>}
       </div>
 
       {/* 밑에 부분 */}
-      <div className='flex justify-end w-full max-w-md mt-[10vh]'>
+      <div className='flex justify-end w-full max-w-md mt-[13vh]'>
         <button onClick={handleSubmit } className='rounded-lg bg-blue-500 w-12 h-12 flex justify-center items-center'>
           <img src='/arrow-left-sm.svg' alt='로그인' />
         </button>
