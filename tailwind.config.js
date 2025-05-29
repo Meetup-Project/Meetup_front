@@ -7,11 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'jalan2': ['var(--font-jalan2)', 'sans-serif'],
+      },
       colors: {
         'blueblue': '#4B6BF5',
+        'publicBlue': '#1570EF',
         'graygray': '#EFEFEF',
         'tgray': '#AFB3C2',
-        'bggray' : 'EFEFEF'
+        'bggray' : '#EFEFEF',
+        'igray' : '#F6F7F8',
       },
       fontSize: {
         'sm': ['0.875rem', '1.25rem'],
